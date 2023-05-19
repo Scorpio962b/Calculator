@@ -1,0 +1,27 @@
+/* block around the calculator */
+.container {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+/* calculator background*/
+#calc  {
+    background-color: rgb(12, 148, 239);
+    padding: 9px;
+    border-radius: 25px;
+    font-size: 30px;
+ }
+
+ /* styling buttons */
+.btn{
+    width: 37px;
+    height: 30px;
+}
+/* screen */
+.top{
+    height: 28px;
+}
