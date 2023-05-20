@@ -11,42 +11,42 @@
     <div class="container">
       <div id="calc">
         <div>
-          <input class="top" type="text" value=""/>
+          <input class="top" id="display" type="text" value=""/>
         </div>
 
         <div>
-          <button class="btn" value="Dlt">Dlt</button>
+          <button class="btn" value="Dlt" onclick="clearScreen()">Dlt</button>
           <button class="btn" value="Clr">Clr</button>
-          <button class="btn" value="+">+</button>
-          <button class="btn" value="×">×</button>
+          <button class="btn" value="+" onclick="setMode('+')">+</button>
+          <button class="btn" value="×" onclick="setMode('*')">×</button>
         </div>
         <div>
-            <button class="btn" value="7">7</button>
-            <button class="btn" value="8">8</button>
-            <button class="btn" value="9">9</button>
-            <button class="btn" value="÷">÷</button>
+            <button class="btn" value="7" onclick="printToScreen(7)">7</button>
+            <button class="btn" value="8" onclick="printToScreen(8)">8</button>
+            <button class="btn" value="9" onclick="printToScreen(9)">9</button>
+            <button class="btn" value="÷" onclick="setMode('/')">÷</button>
         </div>
         <div>
-            <button class="btn"  value="4">4</button>
-            <button class="btn"  value="5">5</button>
-            <button class="btn"  value="6">6</button>
-            <button class="btn"  value="-">-</button>
+            <button class="btn" value="4" onclick="printToScreen(4)">4</button>
+            <button class="btn" value="5" onclick="printToScreen(5)">5</button>
+            <button class="btn" value="6" onclick="printToScreen(6)">6</button>
+            <button class="btn" value="-" onclick="setMode('-')">-</button>
         </div>
         <div>
-            <button class="btn"  value="1">1</button>
-            <button class="btn"  value="2">2</button>
-            <button class="btn"  value="3">3</button>
-            <button class="btn"  value=".">.</button>
+            <button class="btn" value="1" onclick="printToScreen(1)">1</button>
+            <button class="btn" value="2" onclick="printToScreen(2)">2</button>
+            <button class="btn" value="3" onclick="printToScreen(3)">3</button>
+            <button class="btn" value="." onclick="printToScreen('.')">.</button>
         </div>
         <div>
-            <button class="btn"  value="0">0</button>
-            <button class="btn"  value="=">=</button>
-            <button class="btn"  value="%">%</button>
+            <button class="btn" value="0" onclick="printToScreen(0)">0</button>
+            <button class="btn" value="%">%</button>
+            <button class="btn1" value="=" onclick="answer()">=</button>
             
         </div>
       </div>
     </div>
 
-    <script src="./script/index.js"></script>
+    <script src="./script/index.js" ></script>
   </body>
 </html>
